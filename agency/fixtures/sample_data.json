@@ -1,0 +1,54 @@
+[
+  {
+    "model": "agency.guesthouse",
+    "pk": 1,
+    "fields": {
+      "name": "Mathiveri Beach Guesthouse",
+      "description": "Cozy guesthouse in Mathiveri with sea views.",
+      "location_text": "AA. Mathiveri",
+      "contact_info": "+960-7XXXXXXX",
+      "rating": 4.6
+    }
+  },
+  {
+    "model": "agency.roomtype",
+    "pk": 1,
+    "fields": {
+      "guesthouse": 1,
+      "name": "Standard Double",
+      "capacity": 2,
+      "price_per_night": "45.00",
+      "description": "Double bed, AC, ensuite"
+    }
+  },
+  {
+    "model": "agency.package",
+    "pk": 1,
+    "fields": {
+      "title": "3 Nights Mathiveri Package",
+      "description": "3 nights with free transfer and dolphin watching",
+      "base_price": "500.00",
+      "inclusions": ["3 nights", "transfer", "dolphin watching"]
+    }
+  },
+  {
+    "model": "agency.transfer",
+    "pk": 1,
+    "fields": {
+      "type": "speedboat",
+      "route": "Male' — Mathiveri",
+      "schedule": "Daily 08:00 / 15:00",
+      "price": "60.00"
+    }
+  },
+  {
+    "model": "agency.excursion",
+    "pk": 1,
+    "fields": {
+      "title": "Dolphin Watching",
+      "duration": "3 hours",
+      "price": "30.00",
+      "max_people": 10
+    }
+  }
+]

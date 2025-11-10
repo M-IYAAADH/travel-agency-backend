@@ -1,0 +1,17 @@
+Booking cancelled - #{{ booking.id }}
+
+Hello {{ booking.guest_name }},
+
+Your booking has been CANCELLED.
+
+Booking details:
+- Guesthouse: {{ booking.guesthouse }}
+- Room: {{ booking.room_type }}
+- Check-in: {{ booking.check_in }}
+- Check-out: {{ booking.check_out }}
+- Total: {{ booking.total_price }}
+
+If you need help or want to rebook, contact support.
+
+Regards,
+{{ site_name }}

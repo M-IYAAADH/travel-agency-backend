@@ -1,0 +1,17 @@
+Booking received - #{{ booking.id }}
+
+Hello {{ booking.guest_name }},
+
+Thanks for booking with {{ site_name }}. We received your reservation and it's currently PENDING.
+
+Booking details:
+- Guesthouse: {{ booking.guesthouse }}
+- Room: {{ booking.room_type }}
+- Check-in: {{ booking.check_in }}
+- Check-out: {{ booking.check_out }}
+- Total: {{ booking.total_price }}
+
+We will confirm your booking and send transfer details shortly.
+
+Regards,
+{{ site_name }}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body style="font-family: Arial, sans-serif; line-height:1.4;">
+    <h2>Booking received — #{{ booking.id }}</h2>
+    <p>Hello {{ booking.guest_name }},</p>
+
+    <p>Thanks for booking with {{ site_name }}. We received your reservation and it's currently <strong>Pending</strong>.</p>
+
+    <h3>Booking details</h3>
+    <ul>
+      <li><strong>Guesthouse:</strong> {{ booking.guesthouse }}</li>
+      <li><strong>Room:</strong> {{ booking.room_type }}</li>
+      <li><strong>Check-in:</strong> {{ booking.check_in }}</li>
+      <li><strong>Check-out:</strong> {{ booking.check_out }}</li>
+      <li><strong>Total:</strong> {{ booking.total_price }}</li>
+    </ul>
+
+    <p>We will confirm your booking and send further details including transfer arrangements shortly.</p>
+    <p>Regards,<br>{{ site_name }}</p>
+  </body>
+</html>

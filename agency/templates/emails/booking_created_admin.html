@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>New booking #{{ booking.id }}</h3>
+    <p>Guest: {{ booking.guest_name }} ({{ booking.email }}, {{ booking.phone }})</p>
+    <p>Guesthouse: {{ booking.guesthouse }} — Room: {{ booking.room_type }}</p>
+    <p>Check-in: {{ booking.check_in }} • Check-out: {{ booking.check_out }}</p>
+    <p>Total: {{ booking.total_price }}</p>
+  </body>
+</html>

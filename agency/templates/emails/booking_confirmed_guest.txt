@@ -1,0 +1,20 @@
+Booking confirmed - #{{ booking.id }}
+
+Hello {{ booking.guest_name }},
+
+Good news — your booking is CONFIRMED.
+
+Booking details:
+- Guesthouse: {{ booking.guesthouse }}
+- Room: {{ booking.room_type }}
+- Check-in: {{ booking.check_in }}
+- Check-out: {{ booking.check_out }}
+- Total: {{ booking.total_price }}
+
+Extras/notes:
+{{ booking.booking_items }}
+
+If you need to change anything, reply to this email or contact support.
+
+Regards,
+{{ site_name }}

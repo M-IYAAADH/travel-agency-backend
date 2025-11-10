@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif; color:#222; line-height:1.4; margin:0; padding:20px;">
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td style="max-width:600px; margin:0 auto;">
+          <div style="padding:20px; border:1px solid #e6e6e6; border-radius:8px;">
+            <h2 style="margin-top:0; color:#0b5ed7;">Booking Confirmed — #{{ booking.id }}</h2>
+
+            <p>Hello <strong>{{ booking.guest_name }}</strong>,</p>
+
+            <p>Your booking has been <strong style="color:green;">CONFIRMED</strong>. Thank you for choosing {{ site_name }} — we look forward to welcoming you.</p>
+
+            <h3 style="margin-bottom:6px;">Booking details</h3>
+            <table cellpadding="4" cellspacing="0" style="width:100%; border-collapse:collapse;">
+              <tr>
+                <td style="width:35%;"><strong>Guesthouse</strong></td>
+                <td>{{ booking.guesthouse }}</td>
+              </tr>
+              <tr>
+                <td><strong>Room</strong></td>
+                <td>{{ booking.room_type }}</td>
+              </tr>
+              <tr>
+                <td><strong>Check-in</strong></td>
+                <td>{{ booking.check_in }}</td>
+              </tr>
+              <tr>
+                <td><strong>Check-out</strong></td>
+                <td>{{ booking.check_out }}</td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td>{{ booking.total_price }}</td>
+              </tr>
+            </table>
+
+            {% if booking.booking_items %}
+            <h4 style="margin-top:12px;margin-bottom:6px;">Extras</h4>
+            <pre style="white-space:pre-wrap; font-family:inherit; background:#f8f9fa; padding:8px; border-radius:4px;">{{ booking.booking_items }}</pre>
+            {% endif %}
+
+            <p style="margin-top:12px;">
+              If you need to make changes, reply to this email or contact our support.
+            </p>
+
+            <p style="margin:30px 0 0 0; color:#666; font-size:13px;">
+              Regards,<br>{{ site_name }}
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

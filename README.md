@@ -1,2 +1,2 @@
-# travel-agency-backend
-“Django backend for Maldives travel agency website.”
+"# Travel Agency Backend" 
+"Django REST API for travel packages, guesthouses, and bookings." 
